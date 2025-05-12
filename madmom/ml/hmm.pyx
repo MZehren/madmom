@@ -526,7 +526,7 @@ class HiddenMarkovModel(object):
             # search for the best transition
             for state in range(num_states):
                 # reset the current viterbi variable
-                current_viterbi[state] = -np.NPY_INFINITY
+                current_viterbi[state] = -np.inf
                 # get the observation model probability density value
                 # the om_pointers array holds pointers to the correct
                 # observation probability density value for the actual state
